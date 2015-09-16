@@ -1,3 +1,4 @@
+
 <?php
  
 	//echo$_POST["email"];
@@ -10,12 +11,12 @@
 		//echo "Keegi vajutas nuppu";
 		
 		//kontrollin, et e-post ei ole tühi
-		if(empty($_POST[$email]) ){
+		if(empty($_POST[$email])){
 			$email_error = " See väli on kohustuslik.";
 		}
 		
 		//kontrollin, et parool ei ole tühi
-		if(empty($_POST[$password]) ){
+		if(empty($_POST[$password])){
 			$password_error = "See väli on kohustuslik.";
 		}else{
 			
@@ -27,6 +28,10 @@
 			}
 		}
 	}
+?>
+<?php
+	$page_title = "Sisselogimise leht";
+	$page_file_name = "login.php";
 ?>
 <?php require_once("../header.php"); ?>
 	<h2>Avaleht</h2>
